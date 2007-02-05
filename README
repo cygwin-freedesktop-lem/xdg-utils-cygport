@@ -1,0 +1,77 @@
+xdg-utils
+------------------------------------------
+Xdg-utils is a set of command line tools that assist applications with a 
+variety of desktop integration tasks. About half of the tools focus on 
+tasks commonly required during the installation of a desktop application 
+and the other half focuses on integration with the desktop environment 
+while the application is running.
+
+Runtime requirements:
+  bash
+  desktop-file-utils
+  hicolor-icon-theme
+  icon-naming-utils
+  shared-mime-info
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  make-3.81-1
+  sed-4.1.5-2
+  xmlto-0.0.18-1
+
+Canonical website:
+  http://portland.freedesktop.org/
+
+Canonical download:
+  http://portland.freedesktop.org/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xdg-utils-1.0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xdg-utils-1.0.1-X.cygport all
+
+This will create:
+  /usr/src/xdg-utils-1.0.1-X-src.tar.bz2
+  /usr/src/xdg-utils-1.0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xdg-desktop-icon
+  /usr/bin/xdg-desktop-menu
+  /usr/bin/xdg-email
+  /usr/bin/xdg-icon-resource
+  /usr/bin/xdg-mime
+  /usr/bin/xdg-open
+  /usr/bin/xdg-screensaver
+  /usr/share/doc/Cygwin/xdg-utils-1.0.1.README
+  /usr/share/doc/xdg-utils-1.0.1/ChangeLog
+  /usr/share/doc/xdg-utils-1.0.1/LICENSE
+  /usr/share/doc/xdg-utils-1.0.1/README
+  /usr/share/doc/xdg-utils-1.0.1/TODO
+  /usr/share/man/man1/xdg-desktop-icon.1.gz
+  /usr/share/man/man1/xdg-desktop-menu.1.gz
+  /usr/share/man/man1/xdg-email.1.gz
+  /usr/share/man/man1/xdg-icon-resource.1.gz
+  /usr/share/man/man1/xdg-mime.1.gz
+  /usr/share/man/man1/xdg-open.1.gz
+  /usr/share/man/man1/xdg-screensaver.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
