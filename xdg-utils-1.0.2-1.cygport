@@ -1,0 +1,11 @@
+DESCRIPTION="FreeDesktop desktop integration utilities"
+HOMEPAGE="http://portland.freedesktop.org/"
+SRC_URI="http://portland.freedesktop.org/download/${P}.tgz"
+#PATCH_URI="mirror://portage/x11-misc/${PN}/files/${P}-arb-comm-exec.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake
+}
