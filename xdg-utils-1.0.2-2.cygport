@@ -1,7 +1,11 @@
 DESCRIPTION="FreeDesktop desktop integration utilities"
 HOMEPAGE="http://portland.freedesktop.org/"
 SRC_URI="http://portland.freedesktop.org/download/${P}.tgz"
-#PATCH_URI="mirror://portage/x11-misc/${PN}/files/${P}-arb-comm-exec.patch"
+PATCH_URI="
+	1.0.2-arb-comm-exec.patch
+	1.0.2-gvfs-kde4.patch
+	1.0.2-default-browser.patch
+"
 
 src_compile() {
 	lndirs

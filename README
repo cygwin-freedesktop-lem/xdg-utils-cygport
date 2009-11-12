@@ -44,30 +44,11 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/xdg-desktop-icon
-  /usr/bin/xdg-desktop-menu
-  /usr/bin/xdg-email
-  /usr/bin/xdg-icon-resource
-  /usr/bin/xdg-mime
-  /usr/bin/xdg-open
-  /usr/bin/xdg-screensaver
-  /usr/share/doc/xdg-utils-1.0.2/ChangeLog
-  /usr/share/doc/xdg-utils-1.0.2/LICENSE
-  /usr/share/doc/xdg-utils-1.0.2/README
-  /usr/share/doc/xdg-utils-1.0.2/TODO
-  /usr/share/man/man1/xdg-desktop-icon.1.gz
-  /usr/share/man/man1/xdg-desktop-menu.1.gz
-  /usr/share/man/man1/xdg-email.1.gz
-  /usr/share/man/man1/xdg-icon-resource.1.gz
-  /usr/share/man/man1/xdg-mime.1.gz
-  /usr/share/man/man1/xdg-open.1.gz
-  /usr/share/man/man1/xdg-screensaver.1.gz
-
-------------------
-
 Port Notes:
+
+----- version 1.0.2-2 -----
+Updated to use gvfs-open in GNOME and kde-open in KDE4.
+Updated list of available browsers.
 
 ----- version 1.0.2-1 -----
 Version bump.

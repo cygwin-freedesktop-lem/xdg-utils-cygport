@@ -1,0 +1,11 @@
+--- origsrc/xdg-utils-1.0.2/scripts/xdg-open	2007-06-24 14:58:01.000000000 -0500
++++ src/xdg-utils-1.0.2/scripts/xdg-open	2009-11-12 02:24:39.258260900 -0600
+@@ -408,7 +407,7 @@ detectDE
+ if [ x"$DE" = x"" ]; then
+     # if BROWSER variable is not set, check some well known browsers instead
+     if [ x"$BROWSER" = x"" ]; then
+-        BROWSER=firefox:mozilla:netscape
++        BROWSER=epiphany:midori:konqueror:arora:rekonq
+     fi
+     DE=generic
+ fi
