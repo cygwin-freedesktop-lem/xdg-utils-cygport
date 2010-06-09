@@ -5,6 +5,7 @@ PATCH_URI="
 	1.0.2-arb-comm-exec.patch
 	1.0.2-gvfs-kde4.patch
 	1.0.2-default-browser.patch
+	1.0.2-iconv-utf8.patch
 "
 
 src_compile() {
