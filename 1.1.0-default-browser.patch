@@ -1,0 +1,28 @@
+--- origsrc/xdg-utils-1.1.0-rc1/scripts/xdg-email	2011-01-01 04:03:14.000000000 -0600
++++ src/xdg-utils-1.1.0-rc1/scripts/xdg-email	2012-03-06 14:34:24.576623200 -0600
+@@ -697,9 +697,9 @@ fi
+ 
+ # if BROWSER variable is not set, check some well known browsers instead
+ if [ x"$BROWSER" = x"" ]; then
+-    BROWSER=links2:links:lynx:w3m
++    BROWSER=links2:links:lynx:w3m:cygstart
+     if [ -n "$DISPLAY" ]; then
+-        BROWSER=firefox:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
++        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:arora:$BROWSER
+     fi
+ fi
+ 
+--- origsrc/xdg-utils-1.1.0-rc1/scripts/xdg-open	2011-01-01 04:03:14.000000000 -0600
++++ src/xdg-utils-1.1.0-rc1/scripts/xdg-open	2012-03-06 14:33:44.061305800 -0600
+@@ -524,9 +524,9 @@ fi
+ 
+ # if BROWSER variable is not set, check some well known browsers instead
+ if [ x"$BROWSER" = x"" ]; then
+-    BROWSER=links2:links:lynx:w3m
++    BROWSER=links2:links:lynx:w3m:cygstart
+     if [ -n "$DISPLAY" ]; then
+-        BROWSER=firefox:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
++        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:arora:$BROWSER
+     fi
+ fi
+ 

@@ -1,5 +1,5 @@
 category: X11
-requires: bash desktop-file-utils hicolor-icon-theme icon-naming-utils mktemp shared-mime-info
+requires: bash cygutils desktop-file-utils hicolor-icon-theme icon-naming-utils shared-mime-info
 sdesc: "FreeDesktop.org desktop integration tools"
 ldesc: "Xdg-utils is a set of command line tools that assist 
 applications with a variety of desktop integration tasks. About half of 
