@@ -1,6 +1,6 @@
 NAME="xdg-utils"
-VERSION=1.1.0-rc1
-RELEASE=1
+VERSION=1.1.0
+RELEASE=0.2.rc3
 CATEGORY="X11"
 SUMMARY="FreeDesktop.org desktop integration tools"
 DESCRIPTION="Xdg-utils is a set of command line tools that assist applications
@@ -9,13 +9,10 @@ tasks commonly required during the installation of a desktop application and
 the other half focuses on integration with the desktop environment while the
 application is running."
 HOMEPAGE="http://portland.freedesktop.org/"
-SRC_URI="http://portland.freedesktop.org/download/xdg-utils-${VERSION}.tar.gz"
-PATCH_URI="
-	1.1.0-default-browser.patch
-	1.0.2-iconv-utf8.patch
-"
+SRC_URI="http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-${VERSION}-${RELEASE##*\}.tar.gz"
+SRC_DIR="xdg-utils-${VERSION}-${RELEASE##*\.}"
 
-REQUIRES="bash cygutils desktop-file-utils hicolor-icon-theme icon-naming-utils shared-mime-info"
+REQUIRES="cygutils desktop-file-utils hicolor-icon-theme icon-naming-utils libiconv shared-mime-info"
 
 src_compile() {
 	lndirs
