@@ -1,28 +1,22 @@
---- origsrc/xdg-utils-1.1.0-rc1/scripts/xdg-email	2011-01-01 04:03:14.000000000 -0600
-+++ src/xdg-utils-1.1.0-rc1/scripts/xdg-email	2012-03-06 14:34:24.576623200 -0600
-@@ -697,9 +697,9 @@ fi
- 
- # if BROWSER variable is not set, check some well known browsers instead
+--- origsrc/xdg-utils/scripts/xdg-email.in	2015-07-15 17:51:44.000000000 -0500
++++ src/xdg-utils/scripts/xdg-email.in	2015-07-15 17:57:17.601133000 -0500
+@@ -403,7 +403,7 @@ fi
  if [ x"$BROWSER" = x"" ]; then
--    BROWSER=links2:links:lynx:w3m
-+    BROWSER=links2:links:lynx:w3m:cygstart
+     BROWSER=links2:elinks:links:lynx:w3m
      if [ -n "$DISPLAY" ]; then
--        BROWSER=firefox:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
-+        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:arora:$BROWSER
+-        BROWSER=x-www-browser:firefox:seamonkey:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
++        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:$BROWSER
      fi
  fi
  
---- origsrc/xdg-utils-1.1.0-rc1/scripts/xdg-open	2011-01-01 04:03:14.000000000 -0600
-+++ src/xdg-utils-1.1.0-rc1/scripts/xdg-open	2012-03-06 14:33:44.061305800 -0600
-@@ -524,9 +524,9 @@ fi
- 
- # if BROWSER variable is not set, check some well known browsers instead
+--- origsrc/xdg-utils/scripts/xdg-open.in	2015-07-15 17:51:44.000000000 -0500
++++ src/xdg-utils/scripts/xdg-open.in	2015-07-15 17:58:05.261685100 -0500
+@@ -403,7 +403,7 @@ esac
  if [ x"$BROWSER" = x"" ]; then
--    BROWSER=links2:links:lynx:w3m
-+    BROWSER=links2:links:lynx:w3m:cygstart
+     BROWSER=links2:elinks:links:lynx:w3m
      if [ -n "$DISPLAY" ]; then
--        BROWSER=firefox:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
-+        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:arora:$BROWSER
+-        BROWSER=x-www-browser:firefox:seamonkey:mozilla:epiphany:konqueror:chromium-browser:google-chrome:$BROWSER
++        BROWSER=epiphany:midori:konqueror:rekonq:qupzilla:$BROWSER
      fi
  fi
  

@@ -1,6 +1,9 @@
+GIT_URI="git://anongit.freedesktop.org/xdg/xdg-utils"
+inherit git
+
 NAME="xdg-utils"
 VERSION=1.1.0
-RELEASE=0.2.rc3
+RELEASE=0.3.20150715git
 CATEGORY="X11"
 SUMMARY="FreeDesktop.org desktop integration tools"
 DESCRIPTION="Xdg-utils is a set of command line tools that assist applications
@@ -9,10 +12,17 @@ tasks commonly required during the installation of a desktop application and
 the other half focuses on integration with the desktop environment while the
 application is running."
 HOMEPAGE="http://portland.freedesktop.org/"
-SRC_URI="http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-${VERSION}-${RELEASE##*\}.tar.gz"
-SRC_DIR="xdg-utils-${VERSION}-${RELEASE##*\.}"
+#SRC_URI="http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-${VERSION}-${RELEASE##*\}.tar.gz"
+#SRC_DIR="xdg-utils-${VERSION}-${RELEASE##*\.}"
+PATCH_URI="
+	1.1.0-default-browser.patch
+	1.1.0-cygwinx.patch
+"
 
-REQUIRES="cygutils desktop-file-utils hicolor-icon-theme icon-naming-utils libiconv shared-mime-info"
+ARCH=noarch
+
+# optional: perl-File-MimeInfo
+REQUIRES="cygutils desktop-file-utils file hicolor-icon-theme icon-naming-utils libiconv shared-mime-info which"
 
 src_compile() {
 	lndirs
