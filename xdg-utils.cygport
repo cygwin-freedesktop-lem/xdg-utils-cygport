@@ -1,9 +1,6 @@
-GIT_URI="git://anongit.freedesktop.org/xdg/xdg-utils"
-inherit git
-
 NAME="xdg-utils"
-VERSION=1.1.0
-RELEASE=0.3.20150715git
+VERSION=1.1.1
+RELEASE=1
 CATEGORY="X11"
 SUMMARY="FreeDesktop.org desktop integration tools"
 DESCRIPTION="Xdg-utils is a set of command line tools that assist applications
@@ -11,12 +8,11 @@ with a variety of desktop integration tasks. About half of the tools focus on
 tasks commonly required during the installation of a desktop application and
 the other half focuses on integration with the desktop environment while the
 application is running."
-HOMEPAGE="http://portland.freedesktop.org/"
-#SRC_URI="http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-${VERSION}-${RELEASE##*\}.tar.gz"
-#SRC_DIR="xdg-utils-${VERSION}-${RELEASE##*\.}"
+HOMEPAGE="https://wiki.freedesktop.org/www/Software/xdg-utils/"
+SRC_URI="http://portland.freedesktop.org/download/xdg-utils-${VERSION}.tar.gz"
 PATCH_URI="
-	1.1.0-default-browser.patch
-	1.1.0-cygwinx.patch
+	1.1.1-default-browser.patch
+	1.1.1-cygwinx.patch
 "
 
 ARCH=noarch

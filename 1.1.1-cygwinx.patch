@@ -1,5 +1,5 @@
---- origsrc/xdg-utils/scripts/xdg-copy.in	2015-09-18 04:14:28.000000000 -0500
-+++ src/xdg-utils/scripts/xdg-copy.in	2015-09-18 10:18:14.648048300 -0500
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-copy.in	2015-10-05 13:59:19.000000000 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-copy.in	2015-10-07 21:16:02.278459400 -0500
 @@ -96,7 +96,7 @@ case "$DE" in
      copy_kde "$source" "$dest"
      ;;
@@ -9,9 +9,9 @@
      copy_gnome "$source" "$dest"
      ;;
  
---- origsrc/xdg-utils/scripts/xdg-email.in	2015-09-18 04:14:56.766568900 -0500
-+++ src/xdg-utils/scripts/xdg-email.in	2015-09-18 10:19:18.012094500 -0500
-@@ -416,7 +416,7 @@ case "$DE" in
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-email.in	2015-10-07 21:10:45.159321200 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-email.in	2015-10-07 21:16:02.282459600 -0500
+@@ -451,7 +451,7 @@ case "$DE" in
      open_gnome "${mailto}"
      ;;
  
@@ -20,8 +20,8 @@
      open_gnome3 "${mailto}"
      ;;
  
---- origsrc/xdg-utils/scripts/xdg-file-dialog.in	2015-09-18 04:14:28.000000000 -0500
-+++ src/xdg-utils/scripts/xdg-file-dialog.in	2015-09-18 10:19:46.066657000 -0500
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-file-dialog.in	2015-10-05 13:59:19.000000000 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-file-dialog.in	2015-10-07 21:16:02.288460000 -0500
 @@ -312,7 +312,7 @@ if [ "$action" = "openfilename" ]; then
          open_kde "$filename"
          ;;
@@ -58,9 +58,9 @@
          directory_zenity "$filename"
          ;;
  
---- origsrc/xdg-utils/scripts/xdg-mime.in	2015-09-18 04:14:28.000000000 -0500
-+++ src/xdg-utils/scripts/xdg-mime.in	2015-09-18 10:20:24.316514100 -0500
-@@ -566,7 +566,7 @@ if [ "$action" = "info" ]; then
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-mime.in	2015-10-05 13:59:19.000000000 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-mime.in	2015-10-07 21:16:02.292460200 -0500
+@@ -586,7 +586,7 @@ if [ "$action" = "info" ]; then
          info_kde "$filename"
          ;;
  
@@ -69,19 +69,19 @@
          info_gnome "$filename"
          ;;
  
---- origsrc/xdg-utils/scripts/xdg-open.in	2015-09-18 04:14:56.769069200 -0500
-+++ src/xdg-utils/scripts/xdg-open.in	2015-09-18 10:21:06.785406900 -0500
-@@ -412,7 +412,7 @@ case "$DE" in
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-open.in	2015-10-07 21:10:45.162321400 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-open.in	2015-10-07 21:16:02.313461400 -0500
+@@ -460,7 +460,7 @@ case "$DE" in
      open_kde "$url"
      ;;
  
--    gnome*|cinnamon)
-+    gnome*|cinnamon|cygwinx)
-     open_gnome "$url"
+-    gnome3|cinnamon)
++    gnome3|cinnamon|cygwinx)
+     open_gnome3 "$url"
      ;;
  
---- origsrc/xdg-utils/scripts/xdg-utils-common.in	2015-09-18 04:14:28.000000000 -0500
-+++ src/xdg-utils/scripts/xdg-utils-common.in	2015-09-18 10:24:59.727986900 -0500
+--- origsrc/xdg-utils-1.1.1/scripts/xdg-utils-common.in	2015-10-05 13:59:19.000000000 -0500
++++ src/xdg-utils-1.1.1/scripts/xdg-utils-common.in	2015-10-07 21:16:59.665741700 -0500
 @@ -279,6 +279,9 @@ detectDE()
           XFCE)
             DE=xfce
@@ -89,6 +89,6 @@
 +         X-Cygwin)
 +           DE=cygwinx
 +           ;;
-       esac
-     fi
- 
+          X-Generic)
+            DE=generic
+            ;;
