@@ -1,6 +1,6 @@
 NAME="xdg-utils"
 VERSION=1.1.1
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="FreeDesktop.org desktop integration tools"
 DESCRIPTION="Xdg-utils is a set of command line tools that assist applications
@@ -13,6 +13,8 @@ SRC_URI="http://portland.freedesktop.org/download/xdg-utils-${VERSION}.tar.gz"
 PATCH_URI="
 	1.1.1-default-browser.patch
 	1.1.1-cygwinx.patch
+	1.1.1-cygstart.patch
+	1.1.1-open_generic.patch
 "
 
 ARCH=noarch
